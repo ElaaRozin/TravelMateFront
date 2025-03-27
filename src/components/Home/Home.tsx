@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 const Home = () => {
   const navigate = useNavigate();
-
+  const token = localStorage.getItem('token');
   return (
     <div>
       <NavBar/>
@@ -13,8 +13,8 @@ const Home = () => {
       <div className="overlay">
         <h1>Welcome to TravelMate ✈️</h1>
         <p>Plan your next adventure with ease and discover new destinations.</p>
-        <button onClick={() => navigate("/register")}>Get Started</button>
-        <button onClick={() => navigate("/profile")}>To Your Profile</button>
+        {!token&&<button onClick={() => navigate("/register")}>Get Started</button>}
+        { token && (<button onClick={() => navigate("/profile")}>To Your Profile</button>)}
       </div>
     </div>
     <Footer/>
