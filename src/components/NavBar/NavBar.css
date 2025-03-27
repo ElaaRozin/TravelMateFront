@@ -1,0 +1,65 @@
+/* General styles for the navbar */
+.navbar {
+  position: fixed; /* Makes it stay fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding-left: 10px;
+  display: flex;
+  padding-left: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #2c1e6d;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f0e6ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: #b39ddb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a, .logoff-btn {
+  font-size: 1.1rem;
+  color: #f0e6ff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links {
+  margin-right: 30px;
+  justify-content: center;
+  margin-top:  3px; ;
+}
+
+.nav-links a:hover, .logoff-btn:hover {
+  background-color: #5e4bb4;
+  color: #ffffff;
+}
+
+.logoff-btn {
+  margin-right:20px ;
+  margin-left:10px ;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+}
+
+

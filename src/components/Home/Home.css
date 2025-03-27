@@ -1,0 +1,43 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  background: url("https://c8.alamy.com/comp/2RDF3Y1/airplane-seamless-pattern-cute-plane-surface-pattern-for-fashion-print-vector-texture-blue-and-white-2RDF3Y1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
