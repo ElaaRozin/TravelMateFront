@@ -42,7 +42,7 @@ const Trip = () => {
     const fetchTrip = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://35.184.227.186:3006/api/trips/${tripId}`, {
+        const response = await fetch(`http://localhost:3006/api/trips/${tripId}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const Trip = () => {
     if (!editedTrip) return;
 
     try {
-      const response = await fetch(`http://35.184.227.186:3006/api/trips/${tripId}`, {
+      const response = await fetch(`http://localhost:3006/api/trips/${tripId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -131,7 +131,7 @@ const Trip = () => {
     if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
     try {
-      const response = await fetch(`http://35.184.227.186:3006/api/trips/${tripId}`, {
+      const response = await fetch(`http://localhost:3006/api/trips/${tripId}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`,
@@ -151,7 +151,7 @@ const Trip = () => {
     setLoadingSuggestion(true); // This triggers the loading message to appear
 
     try {
-      const response = await fetch(`http://35.184.227.186:3006/api/suggest`, {
+      const response = await fetch(`http://localhost:3006/api/suggest`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -19,7 +19,7 @@ const UserProfile: React.FC = () => {
   const [error, setError] = useState<string>('');
 
   useEffect(() => {
-    fetch('http://35.184.227.186:3006/api/profile', {
+    fetch('http://localhost:3006/api/profile', {
       method: 'GET',
       headers: { 'Authorization': `Bearer ${token}` }
     })
@@ -38,7 +38,7 @@ const UserProfile: React.FC = () => {
   useEffect(() => {
     const token = localStorage.getItem('token'); // Get the JWT token from localStorage
     if (token) {
-      fetch('http://35.184.227.186:3006/api/trips', {
+      fetch('http://localhost:3006/api/trips', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`, // Include the token in the Authorization header

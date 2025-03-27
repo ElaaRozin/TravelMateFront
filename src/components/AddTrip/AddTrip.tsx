@@ -66,7 +66,7 @@ const AddTrip = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://35.184.227.186:3006/api/trips", {
+      const response = await fetch("http://localhost:3006/api/trips", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
